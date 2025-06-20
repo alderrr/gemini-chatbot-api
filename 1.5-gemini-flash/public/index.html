@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GeminiBot</title>
+  <link rel="icon" href="gemini-icon.png" type="image/png">
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+  <div class="container">
+    <div class="title-header">
+      <h1>GeminiBot</h1>
+      <button id="theme-toggle" class="theme-toggle"><i class="fas fa-moon"></i></button>
+    </div>
+    <div id="chat-box" class="chat-box"></div>
+    <form id="chat-form">
+      <input type="text" id="user-input" placeholder="Ask anything" autocomplete="off"/>
+      <button type="submit"><i class="fas fa-paper-plane"></i></button>
+    </form>
+  </div>
+  <footer class="footer">
+    Made with Gemini AI by Alder
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
