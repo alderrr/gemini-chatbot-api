@@ -39,7 +39,7 @@ body.dark-mode {
 }
 
 body {
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Inter', Arial, sans-serif;
   background-color: var(--bg-color);
   margin: 0;
   padding: 0;
@@ -78,6 +78,18 @@ h1 {
   margin: 0;
   color: var(--heading-color);
   transition: color 0.3s ease;
+}
+
+.version-tag {
+  font-size: 0.4em;
+  font-weight: 500;
+  color: var(--thinking-color);
+  background-color: var(--thinking-bg);
+  padding: 3px 8px;
+  border-radius: 8px;
+  margin-left: 10px;
+  vertical-align: middle;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .chat-box {
@@ -214,6 +226,12 @@ button.visible {
 * {
   scrollbar-width: thin;
   scrollbar-color: #bbb var(--bg-color); 
+}
+
+code, pre {
+  font-family: 'Roboto Mono', monospace;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 body.dark-mode ::-webkit-scrollbar-track {
