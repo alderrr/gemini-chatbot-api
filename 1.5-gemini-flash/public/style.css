@@ -166,9 +166,9 @@ input[type="text"]:focus {
 }
 
 /* ===================================================
-   Button
+   Submit Button (Only Form Submit)
 =================================================== */
-button {
+form button[type="submit"] {
   min-width: 40px;
   padding: 10px;
   font-size: 16px;
@@ -186,14 +186,14 @@ button {
   transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
 }
 
-button:hover {
-  background-color: var(--button-hover-bg);
-}
-
-button.visible {
+form button[type="submit"].visible {
   opacity: 1;
   transform: scale(1);
   pointer-events: auto;
+}
+
+form button[type="submit"]:hover {
+  background-color: var(--button-hover-bg);
 }
 
 /* ===================================================
@@ -208,11 +208,17 @@ button.visible {
   border-radius: 50%;
   background-color: var(--container-bg);
   color: var(--heading-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .theme-toggle:hover {
   color: white;
+  background-color: var(--button-bg);
 }
 
 /* ===================================================
@@ -252,7 +258,6 @@ button.visible {
   scrollbar-color: #bbb var(--bg-color);
 }
 
-/* Dark Mode Scrollbar */
 body.dark-mode ::-webkit-scrollbar-track {
   background: var(--bg-color);
 }
